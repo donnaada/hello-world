@@ -118,10 +118,8 @@ object-fit: cover;
   margin-top: 0;
 }
 
-
-
-
 footer{
+  background-color: #152128;
   bottom: 0;
   text-align: center;
 }
