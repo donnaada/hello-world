@@ -1,12 +1,4 @@
-function cpyYr(){
-  let year = 2023;
-  return year;
-}
-function cpyMsg(){
-  let msg = 'All Rights Reserved';
-  return msg;
-}
-  // Gets myName through input
+// Gets myName through input
 function getName(){
   let userName = "";
   while (userName === "" || userName === null){
@@ -15,6 +7,7 @@ function getName(){
   return userName;
 }
 
+//Ask user if they want a personalized experience
 function personalizedExp(){
   let choice = confirm("Do you want a personalized browsing experience?");
   let personalizedName;
@@ -34,3 +27,13 @@ function personalizedExp(){
 }
 
 let displayName = personalizedExp();
+
+function cpyYr(){
+  let year = '2023';
+  return year;
+}
+
+function cpyMsg(){
+  let msg = 'All Rights Reserved';
+  return msg;
+}
