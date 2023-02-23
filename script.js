@@ -1,25 +1,36 @@
-let myName;
-let year = 2023;
+function cpyYr(){
+  let year = 2023;
+  return year;
+}
+function cpyMsg(){
+  let msg = 'All Rights Reserved';
+  return msg;
+}
+  // Gets myName through input
+function getName(){
+  let userName = "";
+  while (userName === "" || userName === null){
+  userName = prompt("Please Enter Your Name: ");
+  }
+  return userName;
+}
 
-  if (confirm("Want to provide your name for a more personalized experience?","") ){
+function personalizedExp(){
+  let choice = confirm("Do you want a personalized browsing experience?");
+  let personalizedName;
+  
+  console.log(choice);
 
-    myName = prompt("What is your name?");
-
-    if (myName !== "" && myName !== null){
-      alert("Hello " + myName +" :)");
-      // visitorName.innerHTML = `Hi ${myName},`;
-      document.write("You are viewing the page as " + myName);
-    } else {
-      alert("No problem :) We are still happy to have you here.")
-      myName = "Guest";
-      // visitorName.innerHTML = `Hi Guest,`;
-      document.write('If you would like for your name to be visible, simply refresh the page :)')
-
-    }
-      
+  if (choice === true){
+    personalizedName = getName();
+    console.log('Your Name is ' + personalizedName);
   } else {
-    myName = "Guest";
-    alert("No problem :)")
-    document.write('If you would like for your name to be visible, simply refresh the page :)')
+    console.log('you selected no');
+    personalizedName = "Visitor";
+    console.log('Your Name is ' + personalizedName);
   }
 
+  return personalizedName;
+}
+
+let displayName = personalizedExp();
