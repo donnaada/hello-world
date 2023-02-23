@@ -13,13 +13,13 @@ let year = 2023;
       alert("No problem :) We are still happy to have you here.")
       myName = "Guest";
       // visitorName.innerHTML = `Hi Guest,`;
-      document.write('<span style="text-align:center; padding-right:5px;">If you would like for your name to be visible, simply refresh the page :)</span>')
+      document.write('If you would like for your name to be visible, simply refresh the page :)')
 
     }
       
   } else {
     myName = "Guest";
     alert("No problem :)")
-    document.write('<span style="text-align:center; padding-right:5px;">If you would like for your name to be visible, simply refresh the page :)</span>')
+    document.write('If you would like for your name to be visible, simply refresh the page :)')
   }
 
