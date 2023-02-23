@@ -74,6 +74,14 @@ object-fit: cover;
   text-align: center;
 }
 
+.main-top p span{
+  font-weight: 600;
+  text-transform: uppercase;
+  font-style: italic;
+  text-decoration: underline;
+  
+}
+
 .main-top p small{
   font-style: italic;
 }
