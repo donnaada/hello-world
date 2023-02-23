@@ -5,6 +5,7 @@ body {
   background-color: #2f4858;
   color: #d3d3d3;  
   margin: 0;
+  height: 100%;
 }
 
 a {
@@ -54,6 +55,7 @@ main{
 margin: 0 auto;
 background-image: url("https://images.unsplash.com/photo-1585314062340-f1a5a7c9328d?ixlib=rb-4.0.3&ixid=MnwxMjA3fDB8MHxwaG90by1wYWdlfHx8fGVufDB8fHx8&auto=format&fit=crop&w=687&q=80");
 padding-bottom: 10px;
+
 }
 
 .main-top{
@@ -70,7 +72,6 @@ object-fit: cover;
 .main-top p{
   font-size: 1.25rem;
   text-align: center;
-  margin-top: ;
 }
 
 .main-top p small{
@@ -119,6 +120,7 @@ object-fit: cover;
 }
 
 footer{
+  /* position: sticky; */
   bottom: 0;
   text-align: center;
 }
