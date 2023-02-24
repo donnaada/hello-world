@@ -39,3 +39,30 @@ function cpyMsg(){
   let msg = 'All Rights Reserved';
   return msg;
 }
+
+function getRating(){
+  let rating = parseInt(prompt("On a scale of 1-5, how would you rate this dessert?"));
+  let stars = "";
+
+  if (isNaN(rating)){
+    alert(`${rating} is not a number`);
+    // return stars;
+  }else if(rating < 0 || rating > 5){
+    alert(`${rating} is not between 1-5`);
+    // return stars;
+  } else {
+    for(i = 0; i < rating; i++){
+      stars += "&starf;"
+    }
+  //  return stars;
+  }
+  return stars;
+}
+
+function displayStars(){
+  let star = getRating();
+  // starSpan = "";
+  let starSpan = document.getElementById("stars");
+  starSpan.innerHTML = star;
+  
+}

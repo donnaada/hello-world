@@ -125,6 +125,11 @@ main{
   margin-top: 0;
 }
 
+.content span{
+  font-size: 30px;
+  color: #daa520;
+}
+
 footer{
   /* position: sticky; */
   bottom: 0;
