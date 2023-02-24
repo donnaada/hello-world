@@ -46,23 +46,30 @@ function getRating(){
 
   if (isNaN(rating)){
     alert(`${rating} is not a number`);
-    // return stars;
   }else if(rating < 0 || rating > 5){
     alert(`${rating} is not between 1-5`);
-    // return stars;
   } else {
     for(i = 0; i < rating; i++){
       stars += "&starf;"
     }
-  //  return stars;
   }
   return stars;
 }
 
-function displayStars(){
+function rateCookies(){
   let star = getRating();
-  // starSpan = "";
-  let starSpan = document.getElementById("stars");
+  let starSpan = document.getElementById("cookieRating");
   starSpan.innerHTML = star;
-  
+}
+
+function rateBoxCake(){
+  let star = getRating();
+  let starSpan = document.getElementById("cakeRating");
+  starSpan.innerHTML = star;
+}
+
+function rateIceCream(){
+  let star = getRating();
+  let starSpan = document.getElementById("iceCreamRating");
+  starSpan.innerHTML = star;
 }
