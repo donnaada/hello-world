@@ -50,15 +50,25 @@ function getRating(){
   let rating = parseInt(prompt("On a scale of 1-5, how would you rate this dessert?"));
   let stars = "";
 
-  if (isNaN(rating)){
-    alert(`${rating} is not a number`);
-  }else if(rating < 0 || rating > 5){
-    alert(`${rating} is not between 1-5`);
-  } else {
-    for(i = 0; i < rating; i++){
-      stars += "&starf;"
-    }
+  // if (isNaN(rating)){
+  //   alert(`${rating} is not a number`);
+  // } else if (rating < 0 || rating > 5){
+  //   alert(`${rating} is not between 1-5`);
+  // } else {
+  //   for(i = 0; i < rating; i++){
+  //     stars += "&starf;"
+  //   }
+  // }
+
+  while (isNaN(rating) || rating <= 0 || rating > 5){
+    alert(`${rating} is not a valid response. Please try again!`);
+    rating = parseInt(prompt("On a scale of 1-5, how would you rate this dessert?"));
   }
+
+  for(i = 0; i < rating; i++){
+    stars += "&starf;"
+  }
+
   return stars;
 }
 
