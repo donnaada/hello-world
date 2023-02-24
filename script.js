@@ -1,8 +1,23 @@
+function cpyYr(){
+  let date = new Date()
+  let year = date.getFullYear();
+  return year;
+}
+
+function cpyMsg(){
+  let msg = 'All Rights Reserved';
+  return msg;
+}
+
+
 // Gets myName through input
 function getName(){
   let userName = "";
-  while (userName === "" || userName === null){
+  while (userName === ""){
   userName = prompt("Please Enter Your Name: ");
+  }
+  if (userName === null){
+    userName = " Visitor";
   }
   return userName;
 }
@@ -22,7 +37,7 @@ function personalizedExp(){
     personalizedName = "Visitor";
   }
 
-  alert('Your are viewing the page as ' + personalizedName);
+  alert(`Your are viewing the page as ${personalizedName}.`);
 
 
   return personalizedName;
@@ -30,15 +45,6 @@ function personalizedExp(){
 
 let displayName = personalizedExp();
 
-function cpyYr(){
-  let year = 2023;
-  return year;
-}
-
-function cpyMsg(){
-  let msg = 'All Rights Reserved';
-  return msg;
-}
 
 function getRating(){
   let rating = parseInt(prompt("On a scale of 1-5, how would you rate this dessert?"));
