@@ -10,4 +10,4 @@ This website project was developed during the `Code Fellows Code 102d48` course 
 
 This site was meant to be a fun project showcasing some of my favorite desserts and the reason behind my choice, some serious and some for humor.
 
-<!-- ### HTML Elements -->
+As I continue through the Code Fellows Code bootcamp, I will add on more functionalities.
